@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Background colour is here because there was a margin when trying to add it direcly to <main> */
+body{
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #282D35;
+}
+
+/* Gives the nav block a height of 90px, add background and aligns items in the center (y-axis). "Flex" allows it to be in-lines*/
+nav{
+    display: flex;
+    align-items: center;
+    background-color: #21222A;
+    padding: 30px 25px;
+    height: 90px;
+}
+
+.nav--logo_text, .nav--title{
+    margin:0;
+}
+
+.nav--title{
+    color: #DEEBFB;
+    font-weight: 600;
+}
+
+/* 'Margin right: auto' makes the right text move all the way to the right. Thicken logo_text and it's size. */
+.nav--logo_text{
+    margin-right: auto;
+    color: #61DAFB;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+/* Seperate the logo and the logo-title. */
+.nav--logo{
+    width: 40px;
+    margin-right: 7px;
+}
+
+/* Make all main text have a padding of 57px up/down and 27px left/right */
+main {
+    padding: 57px 27px;
+    color: white;
+    background-image: url(./images/logo192.png);
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+/* Make title slightly larger and remove some spacing between letters */
+.main--title{
+    margin: 0;
+    font-size: 31px;
+    letter-spacing: -0.05em;
+}
+
+/*Make the list move down from the list title*/
+.main--list{
+    margin-top: 46px;
+}
+
+/* Space out the list items*/
+.main--list > li{
+    line-height: 19px;
+    padding-block: 10px;
+    max-width: 400px;
+}
+
+/* Colouring the bullet points for a list and making them larger*/
+.main--list > li::marker{
+    color: #61DAFB;
+    font-size: 1.6rem;
+}
